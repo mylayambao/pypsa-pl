@@ -1,0 +1,19 @@
+name: pypsa-pl
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - pypsa
+  - snakemake>=7.0
+  - pandas
+  - geopandas
+  - matplotlib
+  - numpy
+  - xarray
+  - netcdf4
+  - cartopy
+  - scipy
+  - jupyter
+  - ruamel.yaml
+  - pip
+
