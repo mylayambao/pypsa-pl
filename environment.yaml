@@ -1,10 +1,11 @@
 name: pypsa-pl
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - python>=3.9
   - pypsa
-  - snakemake>=7.0
+  - snakemake=7.32.4  # this version works better on ARM
   - pandas
   - geopandas
   - matplotlib
@@ -16,4 +17,5 @@ dependencies:
   - jupyter
   - ruamel.yaml
   - pip
-
+  - pip:
+      - pypsa-eur  # optional if you want to inherit from PyPSA-Eur
